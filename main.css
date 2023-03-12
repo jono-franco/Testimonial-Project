@@ -1,0 +1,133 @@
+html{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+body{
+    background-color:#ecf2f8;
+}
+#container{
+    padding: 12% 5%;
+    height: 100%;
+}
+
+.grid-item{
+    padding: 30px;
+    margin-bottom:25px;
+    border-radius: 10px;
+    box-shadow: 0px 7px 10px 1px rgba(0, 0,0, 0.5);
+}
+.grid-item h3{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.grid-item q , .status{
+    opacity: 70%;
+}
+
+#quote{
+    opacity: 40%;
+    position: absolute;
+    width: 170px;
+    right: 7%;
+    top: 0px;
+}
+.profile-icon{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.profile-icon img{
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid magenta;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#test-1{
+    background-color: #583c85;
+    color: white;
+    position: relative;
+     /* Moderate Violet */
+}
+#test-2 {
+    background-color: #484f59;
+    color: white;
+
+    /* Grayish Blue */
+}
+#test-3 {
+    background-color: white;
+
+}
+#test-4 {
+    background-color: #191d24;
+    color: white;
+    /* Blackish Blue */
+}
+#test-5 {
+    background-color:white;
+}
+
+
+@media (min-width:576px){
+    #container{
+        max-width: 90%;
+        align-content: center;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    #test-5{
+        flex-basis: 20%;
+    }
+    #left-container {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 80%;
+    }
+
+    #top{
+        display: flex;
+        flex-basis: 50%;
+    }
+
+    #bottom{
+        display: flex;
+        flex-basis: 50%;
+    }
+
+    #test-1{
+        flex-basis: 70%;
+    }
+    #test-2 {
+        flex-basis: 30%;
+    }
+
+    #test-3 {
+        flex-basis: 30%;
+    }
+    #test-4 {
+        flex-basis: 70%;
+    }  
+
+    #left-container .grid-item{
+        margin-right: 25px;
+    }
+
+    .grid-item{
+        box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.3);
+    }
+
+} 
